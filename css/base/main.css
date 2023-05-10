@@ -1,0 +1,30 @@
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html,
+.wrapper {
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.red{
+	color: var(--red);
+}

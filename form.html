@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Женёва - форма</title>
+	<link rel="icon" href="assets/icons/favicon.ico">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="assets/sources/boostrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css//base/form.css">
+	<link rel="stylesheet" href="css//blocks/header.css">
+	<link rel="stylesheet" href="css//base/main.css">
+	<link rel="stylesheet" href="css//blocks/footer.css">
+	<link rel="stylesheet" href="css//base/vars.css">
+	<!-- JS only -->
+	<script src='js/data.js' defer></script>
+	<script src='js/burger.js' defer></script>
+	<script src='js/form.js' defer></script>
+</head>
+<!--_________fonts_________-->
+
+<!----------------------------------->
+
+<body>
+	<!--_________________________________________-->
+
+
+	<div class="wrapper">
+		<header>
+			<div class="header-container container">
+				<nav class="header-menu d-flex align-items-center justify-content-between">
+					<a href="index.html">
+						<div class="logo">
+							<img src="assets/logo/логотип.jpg" alt="логотип" width="300px">
+						</div>
+					</a>
+					<ul class="menu d-flex gap-2 gap-lg-4 align-items-center justify-content-between">
+						<a href="index.html">
+							<li class="menu-elements">Главная</li>
+						</a>
+						<a href="form.html">
+							<li class="menu-elements red">Контакты</li>
+						</a>
+						<li class="menu-elements burger-icon">Услуги</li>
+						<li>
+							<div class="burger">
+								<ul class="burger-list">
+									<li class="burger-sub">
+										<div class="burger-spanArrow">
+											<div class="burger-elements burger-span">Массаж</div>
+											<img src="assets\icons\arrow-white.png" alt="arrow-icon"
+												class="burger-arrow" width="24px">
+										</div>
+										<div class="sub">
+											<ul class="sub-list">
+												<a href="price.html?type=Ручной массаж">
+													<li class="burger-elements sub-links">Ручной</li>
+												</a>
+												<a href="price.html?type=Аппаратный массаж">
+													<li class="burger-elements sub-links">Аппаратный</li>
+												</a>
+											</ul>
+										</div>
+									</li>
+									<li class="burger-sub">
+										<div class="burger-spanArrow">
+											<div class="burger-elements burger-span">Ногти</div>
+											<img src="assets\icons\arrow-white.png" alt="arrow-icon"
+												class="burger-arrow" width="24px">
+										</div>
+										<div class="sub">
+											<ul class="sub-list">
+												<a href="price.html?type=Маникюр">
+													<li class="burger-elements sub-links">Маникюр</li>
+												</a>
+												<a href="price.html?type=Педикюр">
+													<li class="burger-elements sub-links">Педикюр</li>
+												</a>
+											</ul>
+										</div>
+									</li>
+									<li class="burger-sub">
+										<div class="burger-spanArrow">
+											<div class="burger-elements burger-span">Бьюти</div>
+											<img src="assets\icons\arrow-white.png" alt="arrow-icon"
+												class="burger-arrow" width="24px">
+										</div>
+										<div class="sub">
+											<ul class="sub-list">
+												<a href="price.html?type=Лешмейкер">
+													<li class="burger-elements sub-links">Лешмейкер</li>
+												</a>
+												<a href="price.html?type=Мастер бровист">
+													<li class="burger-elements sub-links">Мастер бровист</li>
+												</a>
+											</ul>
+										</div>
+									</li>
+									<a href="price.html?type=Косметология">
+										<li class="burger-elements sub-links">Косметология</li>
+									</a>
+									<a href="price.html?type=Лазерная эпиляция">
+										<li class="burger-elements sub-links">Лазерная эпиляция</li>
+									</a>
+									<a href="price.html?type=Абонементы">
+										<li class="burger-elements sub-links">Абонементы</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="block mt-4">
+				<div class="block-container container">
+					<form class="ajaxform" method="post">
+						<input type="text" name="имя" id="name" autocomplete="off" class="req form-element"
+							placeholder="Имя" required />
+						<input type="phone" name="телефон" id="phone" autocomplete="off" class="req form-element"
+							placeholder="Телефон" required />
+						<input type="email" name="почта" id="email" autocomplete="off" class="req form-element"
+							placeholder="Почта" required />
+						<textarea name="" class="form-element" autocomplete="off" id="form-textarea" placeholder="Текст"
+							required></textarea>
+						<button class="button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-container container">
+				<ul class="footer-list">
+					<li>
+						<h5>Услуги</h5>
+					</li>
+					<div class="footer-list_container">
+						<a href="price.html?type=Ручной массаж">
+							<li class="footer-links">Ручной массаж</li>
+						</a>
+						<a href="price.html?type=Аппаратный массаж">
+							<li class="footer-links">Аппаратный массаж</li>
+						</a>
+						<a href="price.html?type=Маникюр">
+							<li class="footer-links">Маникюр</li>
+						</a>
+						<a href="price.html?type=Педикюр">
+							<li class="footer-links">Педикюр</li>
+						</a>
+						<a href="price.html?type=Лешмейкер">
+							<li class="footer-links">Лешмейкер</li>
+						</a>
+						<a href="price.html?type=Мастер бровист">
+							<li class="footer-links">Мастер бровист</li>
+						</a>
+						<a href="price.html?type=Косметология">
+							<li class="footer-links">Косметология</li>
+						</a>
+						<a href="price.html?type=Лазерная эпиляция">
+							<li class="footer-links">Лазерная эпиляция</li>
+						</a>
+						<a href="price.html?type=Абонементы">
+							<li class="footer-links">Абонементы</li>
+						</a>
+					</div>
+				</ul>
+				<ul class="footer-list">
+					<li>
+						<h5>Связаться с нами</h5>
+					</li>
+					<div class="footer-list_container">
+						<a href="https://wa.me/+79243194448" target="_blank">
+							<li class="footer-links">WhatsApp</li>
+						</a>
+						<a href="https://instagram.com/geneva___salon?igshid=YmMyMTA2M2Y=" target="_blank">
+							<li class="footer-links">Instagram</li>
+						</a>
+						<a href="https://2gis.ru/khabarovsk/geo/70000001065459029" target="_blank">
+							<li class="footer-links">2ГИС</li>
+						</a>
+						<li class="footer-links">Телефон: 8-924-319-44-48</li>
+						<a href="form.html">
+							<li class="footer-links">Написать заявку</li>
+						</a>
+					</div>
+				</ul>
+				<ul class="footer-list">
+					<li>
+						<h5>Адресс</h5>
+					</li>
+					<div class="footer-list_container">
+						<a href="https://2gis.ru/khabarovsk/geo/70000001065459029" target="_blank">
+							<li class="footer-links">Хабарвск</li>
+						</a>
+						<a href="https://2gis.ru/khabarovsk/geo/70000001065459029" target="_blank">
+							<li class="footer-links">ул. ​Серышева, 46</li>
+						</a>
+						<a href="https://2gis.ru/khabarovsk/geo/70000001065459029" target="_blank">
+							<li class="footer-links">Ежедневно с 10:00 до 20:00</li>
+						</a>
+						<a href="https://2gis.ru/khabarovsk/geo/70000001065459029" target="_blank">
+							<li class="footer-links">Перейти на 2ГИС</li>
+						</a>
+					</div>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+
+
+	<!--_________________________________________-->
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+	$(".ajaxform").submit(function () { // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+
+		var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+		var error = false; // прeдвaритeльнo oшибoк нeт
+
+		if (!error) { // eсли oшибки нeт
+
+			var data = form.serialize(); // пoдгoтaвливaeм дaнныe
+
+			$.ajax({ // инициaлизируeм ajax зaпрoс
+				type: 'POST', // oтпрaвляeм в POST фoрмaтe, мoжнo GET
+				url: 'assets/sources/php/send.php', // путь дo oбрaбoтчикa, у нaс oн лeжит в тoй жe пaпкe
+				dataType: 'json', // oтвeт ждeм в json фoрмaтe
+				data: data, // дaнныe для oтпрaвки
+				beforeSend: function (data) { // сoбытиe дo oтпрaвки
+					form.find('input[type="submit"]').attr('disabled', 'disabled'); // нaпримeр, oтключим кнoпку, чтoбы нe жaли пo 100 рaз
+				},
+				complete: function (data) { // сoбытиe пoслe любoгo исхoдa
+					alert('Письмо отправлено');
+					form.find('input[type="submit"]').prop('disabled', false); // в любoм случae включим кнoпку oбрaтнo
+
+				}
+
+			});
+		}
+		return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+	});
+</script>
+
+</html>

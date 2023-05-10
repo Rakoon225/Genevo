@@ -1,0 +1,171 @@
+header {
+	padding: 5px;
+	border-bottom: 2px solid var(--red);
+	background-color: black;
+	z-index: 200;
+	z-index: 1;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.menu-elements {
+	line-height: 24px;
+	color: #fff;
+	transition: 200ms;
+	cursor: pointer;
+}
+
+.menu-elements:hover {
+	color: var(--red);
+}
+
+/*----------*/
+
+.burger-elements {
+	line-height: 24px;
+	color: #fff;
+	transition: 200ms;
+	cursor: pointer;
+	padding: 2px;
+}
+
+.burger-elements:hover {
+	color: var(--red);
+}
+
+.burger {
+	position: absolute;
+	top: 62px;
+	left: 0;
+	width: 100%;
+	border: 2px solid var(--red);
+	background-color: black;
+	z-index: 0;
+	transition: 300ms;
+	transform: translateY(-1000px);
+}
+
+.burger._active {
+	transform: translateY(0px)
+}
+
+.burger-spanArrow {
+	position: relative;
+}
+
+.burger-arrow {
+	position: absolute;
+	top: 3px;
+	left: -23px;
+	transition: 200ms;
+}
+
+.burger-span._active {
+	color: var(--red);
+}
+
+.burger-arrow._active {
+	transform: rotate(90deg);
+}
+
+.burger-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: start;
+	padding: 25px 30px;
+}
+
+.burger-elements {
+	width: 100%;
+}
+
+.sub {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+	transition: 150ms;
+	transform: translateX(100px);
+}
+
+.sub._active {
+	position: relative;
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+	transform: translateX(0px);
+}
+
+@media(max-width: 992px) {
+	.header-menu {
+		flex-direction: column;
+	}
+
+	.menu-elements {
+		margin: 5px 8px;
+	}
+
+	.burger {
+		top: 50px;
+	}
+}
+
+@media(max-width: 576px) {
+	.burger {
+		transform: translateX(-1000px);
+	}
+
+	.burger._active {
+		transform: translateX(0px)
+	}
+}
+
+@media(max-width: 425px) {
+	.menu {
+		position: static;
+	}
+
+	body {
+		position: relative;
+	}
+
+	.burger {
+		top: 110px;
+		border: none;
+		border-bottom: 2px solid var(--red);
+	}
+
+	.burger-elements {
+		font-size: 20px;
+	}
+
+	.logo img {
+		width: 250px;
+	}
+
+	.menu-elements {
+		font-size: 20px;
+		text-align: center;
+		width: 100%;
+		line-height: 15px;
+	}
+}
+
+@media(max-width: 320px) {
+	.menu-elements {
+		margin: 3px 4px;
+	}
+
+	.menu {
+		margin-left: 8px;
+	}
+}
